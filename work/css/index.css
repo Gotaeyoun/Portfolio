@@ -1,9 +1,26 @@
-/* common */
-#wrapper{background-color :rgb(39, 37, 38); height: 5000px; }
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+html,body{font-family: 'Open Sans', sans-serif;}
 
+
+/* common */
+#wrapper{background-color :rgb(39, 37, 38); height: 5000px;}
+.active-box{width: 3.125rem; height: 3.125rem; background-color: #f8f8f8; display: inline-block;}
 
 /* header */
-#header{}
+#main-wrap{height: 100vh;}
+
+#main-wrap > .haeder{}
+#main-wrap > .header > .navi-wrap{}
+#main-wrap > .header > .navi-wrap > .navi{font-weight: 700; font-size: 1.5rem; 
+	cursor: pointer;}
+
+
+#main-wrap > .maintext-wrap
+#main-wrap > .maintext-wrap > li:nth-child(1)
+#main-wrap > .maintext-wrap > li:nth-child(2)
+#main-wrap > .maintext-wrap > li:nth-child(3)
+#main-wrap > .maintext-wrap > li:nth-child(4)
 
 
 /* about-wrap */
