@@ -8,13 +8,13 @@ html,body{font-family: 'Open Sans', sans-serif;}
 .active-box{width: 3.125rem; height: 3.125rem; background-color: #f8f8f8; display: inline-block;}
 
 /* header */
-#main-wrap{height: 100vh;}
+#main-wrap{}
+#main-wrap > .header{position: fixed; height: 100vh; width: 14.75rem; border: 1px solid green; display: flex;}
+#main-wrap > .header > .navi-wrap{writing-mode: vertical-rl; display: flex; flex-direction: column;}
+#main-wrap > .header > .navi-wrap > .navi{font-weight: 700; font-size: 1.5rem; cursor: pointer; margin-top:auto;}
+#main-wrap > .header > .navi-wrap > .navi > a{color: #f8f8f8; text-decoration: none;}
 
-#main-wrap > .haeder{}
-#main-wrap > .header > .navi-wrap{}
-#main-wrap > .header > .navi-wrap > .navi{font-weight: 700; font-size: 1.5rem; 
-	cursor: pointer;}
-
+#main-wrap > .layout{}
 
 #main-wrap > .maintext-wrap
 #main-wrap > .maintext-wrap > li:nth-child(1)
