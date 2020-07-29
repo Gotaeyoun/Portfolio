@@ -21,7 +21,7 @@ function onInterval () {
 		var $box = $(this);
 		interval[i] = setInterval(function(){
 			var rnd = Math.random() * 20;
-			var hsl = 'hsl(' + 90 + ',' + (Math.floor(Math.random() * 50)) +"%" + ',' + (Math.floor(Math.random() * 100)) +"%" + ')';
+			var hsl = 'hsl(' + 90 + ',' + (Math.floor(Math.random() * 50)) +"%" + ',' + (Math.floor(Math.random() * 80)) +"%" + ')';
 			$box.css("height", rnd + "%");
 			$box.css("background-color", hsl);
 			console.log($box);
