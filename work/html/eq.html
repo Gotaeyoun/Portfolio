@@ -17,7 +17,21 @@
 	<li class="bar"></li>
 </ul>
 <script>
+	var poll = setInterval(colorChange, 0.5);
+	var hue, hueOne, hueTwo, hueThree;
+	function colorChange() {
+		hueOne = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+		hueTwo = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+		hueThree = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+		hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+		$(".bar").animate({
+				backgroundColor: hueOne
+		});
+	}
+	
 	var interval = setInterval(function(){
+
+
 		$(".bar").each(function() {
 			var rnd = Math.random() * 100;
 			$(this).css("height", rnd + "%");

@@ -14,12 +14,12 @@ html,body{font-family: 'Open Sans', sans-serif;}
 #main-wrap > .header > .navi-wrap{display: flex; flex: 36.8644% 0 0; margin-bottom: 82px; margin-left: auto;}
 #main-wrap > .header > .navi-wrap > .navi{font-weight: 700; font-size: 1.5rem;  margin-top:auto; text-align: center;}
 #main-wrap > .header > .navi-wrap > .navi > a{color: #f8f8f8; text-decoration: none; writing-mode: vertical-rl; transform: rotate(180deg); display: inline-block; cursor: pointer;}
-#main-wrap > .header > .navi-wrap > .navi > .active-box{width: 3.125rem; height: 3.125rem; background-color: #f8f8f8;}
-#main-wrap > .header > .navi-wrap > .navi > .move-box{width: 3.125rem; height: 3.125rem; background-color: #f8f8f8; position: absolute; top: 0;}
-
+#main-wrap > .header > .navi-wrap > .navi > .active-box{width: 3.125rem; height: 3.125rem; background-color: #f8f8f8; z-index: 99;}
+#main-wrap > .header > .navi-wrap > .navi > .move-box{width: 3.125rem; height: 3.125rem; background-color: #f8f8f8; position: absolute; top: 0; transition: all 0.3s; z-index: -99;}
 /* animation */
-#main-wrap > .header > .navi-wrap > .navi >.active-box:hover{transition: all 0.3s; height: 1rem;}
-#main-wrap > .header > .navi-wrap > .navi > a:hover~.active-box{transition: all 0.3s; height: 1rem;}
+#main-wrap > .header > .navi-wrap > .navi:hover > .active-box{transition: all 0.3s; height: 1rem;}
+#main-wrap > .header > .navi-wrap > .navi:hover > .move-box{height: 100%;}
+
 
 
 
