@@ -15,24 +15,20 @@ grained("#wrapper", options);
 var interval = setInterval(function(){
   $(".move-box").each(function() {
     var rnd = Math.random() * 20;
-    var rgb = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+    var hsl = 'hsl(' + 90 + ',' + (Math.floor(Math.random() * 256)) +"%" + ',' + (Math.floor(Math.random() * 256)) +"%" + ')';
     $(this).css("height", rnd + "%");
-    $(this).css("background-color", rgb);
+    $(this).css("background-color", hsl);
   });
 }, 300);
 
+/* hover시 네비바 내려오게 하기 */
+$('.navi').hover(function() {
+  console.log(this);
+  clearInterval(interval);
+  $(this).find(".move-box").css("height","100vh");
+  
+}, function(){
+  
+},5000);
 
 
-
-$('.navi').mouseover(function() {
-  $('.move-box').css("height", "100vh");
-});
-
-
-
-
-// $('#test').hover(function() {
-//   $(this).css("color", "red");
-// }, function(){
-//   $(this).css("color", "blue");
-// });
