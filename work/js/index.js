@@ -15,7 +15,7 @@ grained("#wrapper", options);
 var interval = setInterval(function(){
   $(".move-box").each(function() {
     var rnd = Math.random() * 20;
-    var hsl = 'hsl(' + 90 + ',' + (Math.floor(Math.random() * 256)) +"%" + ',' + (Math.floor(Math.random() * 256)) +"%" + ')';
+    var hsl = 'hsl(' + 90 + ',' + (Math.floor(Math.random() * 50)) +"%" + ',' + (Math.floor(Math.random() * 100)) +"%" + ')';
     $(this).css("height", rnd + "%");
     $(this).css("background-color", hsl);
   });
