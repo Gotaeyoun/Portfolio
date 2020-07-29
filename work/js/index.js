@@ -11,24 +11,35 @@ var options = {
 grained("#wrapper", options);
 
 
+
 /* 움직이고 색상변경 상자 */
-var interval = setInterval(function(){
-  $(".move-box").each(function() {
-    var rnd = Math.random() * 20;
-    var hsl = 'hsl(' + 90 + ',' + (Math.floor(Math.random() * 50)) +"%" + ',' + (Math.floor(Math.random() * 100)) +"%" + ')';
-    $(this).css("height", rnd + "%");
-    $(this).css("background-color", hsl);
-  });
-}, 300);
+
+var interval = [];
+function onInterval () {
+	$(".move-box").each(function(i) {
+		clearInterval(interval[i]);
+		var $box = $(this);
+		interval[i] = setInterval(function(){
+			var rnd = Math.random() * 20;
+			var hsl = 'hsl(' + 90 + ',' + (Math.floor(Math.random() * 50)) +"%" + ',' + (Math.floor(Math.random() * 100)) +"%" + ')';
+			$box.css("height", rnd + "%");
+			$box.css("background-color", hsl);
+			console.log($box);
+		}, 300);
+	});
+}
+onInterval();
 
 /* hover시 네비바 내려오게 하기 */
-$('.navi').hover(function() {
-  console.log(this);
-  clearInterval(interval);
-  $(this).find(".move-box").css("height","100vh");
-  
-}, function(){
-  
-},5000);
+$('.navi').mouseover(function(e) {
+	e.stopPropagation();
+	var n = $(this).index();
+	$(".move-box").css("height", 0);
+	$(this).find(".move-box").css("height","100vh");
+	onInterval();
+  clearInterval(interval[n]);
+});
+
+$('.navi-wrap').mouseleave(onInterval);
 
 
