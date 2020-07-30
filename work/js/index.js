@@ -33,7 +33,7 @@ onInterval();
 /* hover시 네비바 내려오게 하기 */
 $('.navi').mouseover(function(e) {
 	e.stopPropagation();
-	var n = $(this).index();
+ 	var n = $(this).index();
 	$(".move-box").css("height", 0);
 	$(this).find(".move-box").css("height","100vh");
 	onInterval();
