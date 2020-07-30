@@ -42,4 +42,13 @@ $('.navi').mouseover(function(e) {
 
 $('.navi-wrap').mouseleave(onInterval);
 
-
+/* line이 비처럼 내려와요! */
+$(function() {
+			$(".lineAni1").slideDown(3000); // id가 "divBox"인 요소를 내려오면서 나타나게 함.
+});
+$(function() {
+			$(".lineAni2").slideDown(1000); // id가 "divBox"인 요소를 내려오면서 나타나게 함.
+});
+$(function() {
+			$(".lineAni3").slideDown(2000); // id가 "divBox"인 요소를 내려오면서 나타나게 함.
+});
