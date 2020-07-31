@@ -43,6 +43,7 @@ $('.navi').mouseover(function(e) {
 $('.navi-wrap').mouseleave(onInterval);
 
 
+
 /* line이 비처럼 내려와요! */
 $(function() {
 			$(".lineAni1").slideDown(3000); 
