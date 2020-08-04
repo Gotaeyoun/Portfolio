@@ -88,3 +88,8 @@ function typing(){
         }
     } 
 }  
+
+/*  타이핑 쳐지고 그 이후에 라인 애니메이션 */
+function typingLine(){
+	$( '.actbar-wrap > .actbar1' ).css( {width:'100%', opacity:'1'}, 2000);
+}

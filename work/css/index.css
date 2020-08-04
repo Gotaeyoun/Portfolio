@@ -16,7 +16,7 @@ html,body{font-family: 'Open Sans', sans-serif;}
 /* header */
 #main-wrap{display: flex;}
 #main-wrap > .header{position: fixed; height: 100vh; width: 14.75rem; display: flex; z-index:11; }
-#main-wrap > .header > .navi-wrap{display: flex; flex: 36.8644% 0 0; margin-left: auto;}
+#main-wrap > .header > .navi-wrap{display: flex; flex: 36.8644% 0 0; margin-left: auto; transition: all 0.5s;}
 #main-wrap > .header > .navi-wrap > .navi{font-weight: 700; font-size: 1.5rem;  text-align: center; display: flex; flex-direction: column; justify-content: flex-end; 
 	height: 100vh; z-index: 100;}
 #main-wrap > .header > .navi-wrap > .navi:nth-child(1){border-right: 1px solid rgba(222, 216, 210,.4); border-left: 1px solid rgba(222, 216, 210,.4);}
@@ -37,16 +37,17 @@ html,body{font-family: 'Open Sans', sans-serif;}
 #main-wrap > .typing > ul > li:nth-child(3){position:absolute; top: 31.5rem; right: 6.25rem; color:#f8f8f8; }
 #main-wrap > .typing > ul > li:nth-child(4){position:absolute; top: 39.75rem; right: 6.25rem; color:#c1bab2; letter-spacing: 0.25rem;}
 
-#main-wrap > .actbar-wrap {position: absolute; width:100%; height: 100%;}
-#main-wrap > .actbar-wrap > div{position: absolute; width:250px; height:10px;}
-#main-wrap > .actbar-wrap > div:nth-child(1) {background-color: #f87f5a; top:486px; left: 1574px;}
-#main-wrap > .actbar-wrap > div:nth-child(2) {background-color: #aeff53; top:618px; left: 1574px;}
-#main-wrap > .actbar-wrap > div:nth-child(3) {background-color: #5af8f0; top:750px; left: 1574px;}
+.actbar-wrap {position: absolute; width:100%; height: 100%;}
+.actbar-wrap > div{position: absolute; height:10px;}
+.actbar-wrap > .actbar1 {background-color: #f87f5a; top:170px; left: 646px; animation-name: moving-line; animation-duration: 1s;
+animation-delay: 7s; animation-fill-mode:forwards;}
+.actbar-wrap > .actbar2 {background-color: #aeff53; top:170px; left: 300px; animation-name: moving-line; animation-duration: 1s;
+	animation-delay: 7.6s; animation-fill-mode:forwards;}
+.actbar-wrap > .actbar3 {background-color: #5af8f0; top:170px; left: 660px; animation-name: moving-line; animation-duration: 1s;
+	animation-delay: 7.3s; animation-fill-mode:forwards;} 
 
 
-/* animation */
-#main-wrap > .header > .navi-wrap > .navi:hover > .active-box{transition: all 0.5s; height: 1rem; opacity: 0;}
-/* about-wrap */
+	/* about-wrap */
 #about-wrap{}
 
 
@@ -63,3 +64,12 @@ html,body{font-family: 'Open Sans', sans-serif;}
 
 
 
+
+	
+	/* animation */
+	#main-wrap > .header > .navi-wrap > .navi:hover > .active-box{transition: all 0.5s; height: 1rem; opacity: 0;}
+	@keyframes moving-line {
+		0% {opacity:0; width:0;}
+		100% {opacity:1; width:250px;}
+	}
+	
