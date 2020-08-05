@@ -19,8 +19,8 @@ html,body{font-family: 'Open Sans', sans-serif;}
 
 /* header */
 #main-wrap{display: flex; }
-#main-wrap > .header{position: fixed; height: 100vh; width: 14.75rem; display: flex; z-index:11; }
-#main-wrap > .header > .navi-wrap{display: flex; flex: 36.8644% 0 0; margin-left: auto; transition: all 0.5s;}
+#main-wrap > .header {position: fixed; height: 100vh; width: 14.75rem; z-index:11; }
+#main-wrap > .header > .navi-wrap{display: flex; width: 60%; margin-left: 40%; transition: all 0.5s;}
 #main-wrap > .header > .navi-wrap > .navi{font-weight: 700; font-size: 1.5rem;  text-align: center; display: flex; flex-direction: column; justify-content: flex-end; 
 	height: 100vh; z-index: 100;}
 #main-wrap > .header > .navi-wrap > .navi:nth-child(1){border-right: 1px solid rgba(222, 216, 210,.4); border-left: 1px solid rgba(222, 216, 210,.4);}

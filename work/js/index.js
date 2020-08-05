@@ -99,9 +99,10 @@ function typingLine(){
 
 var $header = $('header');
 $(window).scroll(function(){
+	console.log($(this).scrollTop());
   if($(this).scrollTop() > 0){
-    $header.find('navi-wrap').css("margin-left", 0);
+    $header.find('.navi-wrap').css("margin-left", 0);
   }else{
-    $header.find('navi-wrap').css("margin-left", "auto");
+    $header.find('.navi-wrap').css("margin-left", "40%");
   }
 });
