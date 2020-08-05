@@ -93,3 +93,15 @@ function typing(){
 function typingLine(){
 	$( '.actbar-wrap > .actbar1' ).css( {width:'100%', opacity:'1'}, 2000);
 }
+
+
+/*  스크롤되면 네비바가 옆으로 붙어요 */
+
+var $header = $('header');
+$(window).scroll(function(){
+  if($(this).scrollTop() > 0){
+    $header.find('navi-wrap').css("margin-left", 0);
+  }else{
+    $header.find('navi-wrap').css("margin-left", "auto");
+  }
+});
