@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+
+
+	<script>
+		var log = console.log;
+		var SETTING = {
+			name: "LUCKY LOTTO!",
+			count: 6,
+			maxNumber: 45
+		};
+		var count = SETTING.count;
+		var maxNumber = SETTING.maxNumber;
+		log(getLotto(count, maxNumber));
+
+		function getLotto(count, maxNumber) {
+			var numberSet = new Set();
+			while (numberSet.size !== count) {
+				numberSet.add(getRandom(maxNumber))
+			}
+			return numberSet;
+		}
+
+		function getRandom(maxNumber) {
+			return Math.floor(Math.random() * maxNumber + 1);
+		}
+
+
+
+
+console.log()
+		const SETTING = {
+			name: "LUCKY LOTTO!",
+			count: 6,
+			maxNumber: 46,
+		};
+
+		function getrandom() {
+			const lotto = new Set();
+			
+			const {
+				count,
+				maxNumber
+			} = SETTING;
+
+			while (lotto.size < count) {
+				// 0~46이 아니라 실제 로또처럼 1~45가 나오게 끔 함.
+				lotto.add(Math.floor(Math.random() * (maxNumber - 1)) + 1);
+			}
+
+			console.log(lotto);
+		}
+
+		getRandomNumber();
+	</script>
+</body>
+
+</html>

@@ -33,7 +33,7 @@ html,body{font-family: 'Open Sans', sans-serif;}
 
 /* typing-text */
 #main-wrap > .typing-txt{display: none;}
-#main-wrap > .typing{position:relative; height: 100vh; width: 100%;}
+#main-wrap > .typing{position:relative; height: 100vh; width: 100%; }
 #main-wrap > .typing > ul{font-weight:700; font-size:8.75rem; position: relative;}
 #main-wrap > .typing > ul > li{display: block;}
 #main-wrap > .typing > ul > li:nth-child(1){position:absolute; top: 13.5rem; right: 6.25rem; color:#ec1a5b;}
@@ -54,10 +54,33 @@ animation-delay: 7s; animation-fill-mode:forwards;}
 
 
 	/* about-wrap */
-#about-wrap{margin-top:10rem; width:100%; height:100vh; display:flex;}
-#about-wrap > .first-layout	{flex: 33.3333% 0 0;}
-#about-wrap > .second-layout {flex: 33.3333% 0 0;}
-#about-wrap > .last-layout {flex: 33.3333% 0 0;}
+#about-wrap{margin:5rem 0; width:100%; height:100vh; display:flex; font-family: 'Noto Sans KR', sans-serif; border:1px solid red; }
+#about-wrap > .first-layout	{flex: 33.3333% 0 0; z-index: 999;}
+#about-wrap > .first-layout > .img-size{width:300px; height:300px;}
+
+
+
+#about-wrap > .second-layout {flex: 33.3333% 0 0; z-index: 999;}
+#about-wrap > .second-layout > .desc{color: #a49e97; font-size: 24px;}
+#about-wrap > .second-layout > .desc > li > span{font-size: 34px; color:#5af8f0; font-family: 'Nanum Myeongjo', serif;} 
+
+#about-wrap > .second-layout > .contact{font-size: 24px; color: #f8f8f8;}
+#about-wrap > .second-layout > .contact> li:nth-child(1){font-family: 'Nanum Myeongjo', serif; font-size: 34px; color:#aeff53;}
+
+
+
+
+#about-wrap > .last-layout {flex: 33.3333% 0 0; z-index: 999;}
+#about-wrap > .last-layout > .edu-wrap{color: #f8f8f8; font-size: 24px;}
+#about-wrap > .last-layout > .edu-wrap> li:nth-child(1){font-family: 'Nanum Myeongjo', serif; font-size: 34px; color:#aeff53;}
+
+#about-wrap > .last-layout > .lc-wrap{color: #f8f8f8; font-size: 24px;}
+#about-wrap > .last-layout > .lc-wrap> li:nth-child(1){font-family: 'Nanum Myeongjo', serif; font-size: 34px; color:#aeff53;}
+
+#about-wrap > .last-layout > .skill-wrap{color: #f8f8f8; font-size: 24px;}
+#about-wrap > .last-layout > .skill-wrap> li:nth-child(1){font-family: 'Nanum Myeongjo', serif; font-size: 34px; color:#aeff53;}
+
+
 /* active-wrap */
 #active-wrap{}
 
