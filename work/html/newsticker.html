@@ -37,7 +37,7 @@ body{
     var width = $('.ticker-text').width(),
     containerwidth = $('.ticker-container').width(),
     left = containerwidth;
-    $(document).ready(function(e){
+
 	  function tick() {
         if(--left < -width){
             left = containerwidth;
@@ -46,7 +46,6 @@ body{
         setTimeout(tick, 1);
       }
       tick();
-});
   </script>
 </body>
 </html>
