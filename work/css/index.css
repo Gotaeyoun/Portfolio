@@ -20,7 +20,7 @@ html,body{font-family: 'Open Sans', sans-serif;}
 /* header */
 #main-wrap{display: flex; }
 #main-wrap > .header {position: fixed; height: 100vh; width: 14.75rem; z-index:11; }
-#main-wrap > .header > .navi-wrap{display: flex; width: 60%; margin-left: 40%; transition: all 0.8s;}
+#main-wrap > .header > .navi-wrap{display: flex; width: 60%; margin-left: 40%; transition: all 0.8s; z-index: 9999;}
 #main-wrap > .header > .navi-wrap > .navi{font-weight: 700; font-size: 1.5rem;  text-align: center; display: flex; flex-direction: column; justify-content: flex-end; 
 	height: 100vh; z-index: 100;}
 #main-wrap > .header > .navi-wrap > .navi:nth-child(1){border-right: 1px solid rgba(222, 216, 210,.4); border-left: 1px solid rgba(222, 216, 210,.4);}
@@ -54,13 +54,13 @@ animation-delay: 7s; animation-fill-mode:forwards;}
 
 
 	/* about-wrap */
-#about-wrap{margin:5rem 0; width:100%; height:100vh; display:flex; font-family: 'Noto Sans KR', sans-serif; border:1px solid red; }
-#about-wrap > .first-layout	{flex: 33.3333% 0 0; }
-#about-wrap > .first-layout > .img-size{width:300px; height:300px;}
+#about-wrap{padding:5rem 0; width:92%; height:100vh; display:flex; font-family: 'Noto Sans KR', sans-serif; margin-left: auto; z-index: 999; }
+#about-wrap > .first-layout	{flex: 27% 0 0; display: flex; justify-content: center;}
+#about-wrap > .first-layout > .img-size{width:300px; height:300px; }
 
 
 
-#about-wrap > .second-layout {flex: 33.3333% 0 0; z-index: 999;}
+#about-wrap > .second-layout {flex: 38.6% 0 0;}
 #about-wrap > .second-layout > .desc{color: #a49e97; font-size: 1.5rem;}
 #about-wrap > .second-layout > .desc > li > span{font-size: 2.125rem; color:#5af8f0; font-family: 'Nanum Myeongjo', serif;} 
 
@@ -70,7 +70,7 @@ animation-delay: 7s; animation-fill-mode:forwards;}
 
 
 
-#about-wrap > .last-layout {flex: 33.3333% 0 0; z-index: 999;}
+#about-wrap > .last-layout {flex: 34.4% 0 0; z-index: 999; border: 1px solid red;}
 #about-wrap > .last-layout > .edu-wrap{color: #f8f8f8; font-size: 1.5rem;}
 #about-wrap > .last-layout > .edu-wrap> li:nth-child(1){font-family: 'Nanum Myeongjo', serif; font-size: 2.125rem; color:#aeff53;}
 
@@ -83,6 +83,18 @@ animation-delay: 7s; animation-fill-mode:forwards;}
 
 /* active-wrap */
 #active-wrap{}
+#active-wrap > .left-active {position: relative; padding: 1rem; font-size: 12.5rem; font-family: 'Open Sans', sans-serif; font-weight: 700;}
+#active-wrap >.left-active> li {position: absolute;}
+#active-wrap >.left-active> li:nth-child(1) {left: 0px;}
+#active-wrap >.left-active> li:nth-child(2) {left: 1150px;}
+#active-wrap >.left-active> li:nth-child(3) {left: 2300px;}
+
+#active-wrap >.right-active{position: relative; padding: 1rem; font-size: 12.5rem; font-family: 'Open Sans', sans-serif; font-weight: 700; margin-top:8rem;}
+#active-wrap >.right-active> li {position: absolute;}
+#active-wrap >.right-active> li:nth-child(1) {left: 0px;}
+#active-wrap >.right-active> li:nth-child(2) {left: 1150px;}
+#active-wrap >.right-active> li:nth-child(3) {left: 2300px;}
+
 
 
 /* portflio-wrap */

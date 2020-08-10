@@ -99,10 +99,29 @@ function typingLine(){
 
 var $header = $('header');
 $(window).scroll(function(){
-	console.log($(this).scrollTop());
-  if($(this).scrollTop() > 100){
+  if($(this).scrollTop() > 50){
     $header.find('.navi-wrap').css("margin-left", 0);
   }else{
     $header.find('.navi-wrap').css("margin-left", "40%");
   }
 });
+
+
+var newstickerLeft = setInterval(newstickerLeft, 5);
+function newstickerLeft() {
+  $(".left-active > li").each(function(){
+    var xl = $(this).position().left - 1;
+    if(xl <= -1550) xl = $(window).width();
+    $(this).css("left", xl+"px");
+  });
+}
+
+var newstickerRight = setInterval(newstickerRight, 5);
+function newstickerRight() {
+  $(".right-active > li").each(function(){
+    var xr = $(this).position().left + 1;
+    if(xr <= -1550) xr = $(window).width();
+    $(this).css("left", xr+"px");
+  });
+}
+
