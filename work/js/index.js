@@ -107,6 +107,7 @@ $(window).scroll(function(){
 });
 
 
+/*
 var newstickerLeft = setInterval(newstickerLeft,5);
 function newstickerLeft() {
   $(".left-active > li").each(function(){
@@ -115,3 +116,15 @@ function newstickerLeft() {
     $(this).css("left", xl+"px");
   });
 }
+
+ */
+
+
+function leftAni() {
+	var liWidth = $(".left-slide li").outerWidth();
+	$(".left-slide").stop().animate({ "left": -liWidth + "px" }, 6000, "linear", function () {
+		$(this).css("left", 0);
+		leftAni();
+	});
+}
+leftAni();
