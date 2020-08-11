@@ -107,7 +107,7 @@ $(window).scroll(function(){
 });
 
 
-var newstickerLeft = setInterval(newstickerLeft, 5);
+var newstickerLeft = setInterval(newstickerLeft,5);
 function newstickerLeft() {
   $(".left-active > li").each(function(){
     var xl = $(this).position().left - 1;
@@ -115,13 +115,3 @@ function newstickerLeft() {
     $(this).css("left", xl+"px");
   });
 }
-
-var newstickerRight = setInterval(newstickerRight, 5);
-function newstickerRight() {
-  $(".right-active > li").each(function(){
-    var xr = $(this).position().left + 1;
-    if(xr <= -1550) xr = $(window).width();
-    $(this).css("left", xr+"px");
-  });
-}
-
