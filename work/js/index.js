@@ -124,3 +124,14 @@ function rightAni() {
 	});
 }
 rightAni();
+
+
+/* 네비 클릭하면 위치 가는거 */
+
+function onNaviClick() {
+  var tar = $(".page").eq($(this).index()).offset().top + 1;
+  console.log("tar");
+	$("html, body").stop().animate({"scrollTop": tar}, 500);
+}
+
+$(".header > .navi").click(onNaviClick);
