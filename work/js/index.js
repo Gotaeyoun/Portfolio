@@ -107,19 +107,7 @@ $(window).scroll(function(){
 });
 
 
-/*
-var newstickerLeft = setInterval(newstickerLeft,5);
-function newstickerLeft() {
-  $(".left-active > li").each(function(){
-    var xl = $(this).position().left - 1;
-    if(xl <= -1550) xl = $(window).width();
-    $(this).css("left", xl+"px");
-  });
-}
-
- */
-
-
+// 옆으로 움직이는 키워드
 function leftAni() {
 	var liWidth = $(".left-slide li").outerWidth();
 	$(".left-slide").stop().animate({ "left": -liWidth + "px" }, 6000, "linear", function () {
@@ -128,3 +116,11 @@ function leftAni() {
 	});
 }
 leftAni();
+function rightAni() {
+	var liWidth = $(".right-slide li").outerWidth();
+	$(".right-slide").stop().animate({ "left": -liWidth + "px" }, 6000, "linear", function () {
+		$(this).css("left", 0);
+		rightAni();
+	});
+}
+rightAni();
