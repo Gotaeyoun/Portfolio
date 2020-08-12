@@ -54,7 +54,7 @@ animation-delay: 7s; animation-fill-mode:forwards;}
 
 
 	/* about-wrap */
-#about-wrap{margin:5rem 0; width:92%; height:100vh; display:flex; font-family: 'Noto Sans KR', sans-serif; margin-left: auto; z-index: 999; border: 1px solid red;}
+#about-wrap{margin:5rem 0; width:92%; height:100vh; display:flex; font-family: 'Noto Sans KR', sans-serif; margin-left: auto; z-index: 999}
 #about-wrap  .title{font-family: 'Nanum Myeongjo', serif; font-size: 2.125rem; color:#aeff53; font-weight: 700;}
 
 #about-wrap > .first-layout	{flex: 27% 0 0; display: flex; justify-content: center; padding-top: 100px;}
