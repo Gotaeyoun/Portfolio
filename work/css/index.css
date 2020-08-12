@@ -69,11 +69,11 @@ animation-delay: 7s; animation-fill-mode:forwards;}
 #about-wrap > .second-layout > .contact i{padding: 0 1rem;}
 
 
-#about-wrap > .last-layout {flex: 34.4% 0 0; z-index: 999; border: 1px solid red;}
+#about-wrap > .last-layout {flex: 34.4% 0 0; z-index: 999;}
 #about-wrap > .last-layout > .edu-wrap{color: #f8f8f8; font-size: 1.5rem; font-weight: 300;  padding-top: 138px; margin-left: 54px;;}
 #about-wrap > .last-layout > .edu-wrap > li:not(:first-child){padding: 0 1rem; line-height: 3rem;}
 #about-wrap > .last-layout > .lc-wrap{color: #f8f8f8; font-size: 1.5rem; margin-left: 54px; padding-top: 48px;}
-#about-wrap > .last-layout > .lc-wrap > li:not(:first-child){padding: 0 1rem; line-height: 3rem;}
+#about-wrap > .last-layout > .lc-wrap > li:not(:first-child){padding: 0 1rem; line-height: 4rem; }
 #about-wrap > .last-layout > .skill-wrap{color: #f8f8f8; font-size: 1.5rem; margin-left: 54px; padding-top: 64px;}
 #about-wrap > .last-layout > .skill-wrap > li:not(:first-child){padding: 0 1rem; line-height: 3rem;}
 
