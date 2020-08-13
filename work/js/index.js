@@ -116,6 +116,7 @@ function leftAni() {
 	});
 }
 leftAni();
+
 function rightAni() {
 	var liWidth = $(".right-slide li").outerWidth();
 	$(".right-slide").stop().animate({ "left": -liWidth + "px" }, 6000, "linear", function () {
