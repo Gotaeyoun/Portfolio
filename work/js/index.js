@@ -14,33 +14,33 @@ grained("#wrapper", options);
 
 /* 움직이고 색상변경 상자 */
 
-// var interval = [];
-// function onInterval () {
-// 	$(".move-box").each(function(i) {
-// 		clearInterval(interval[i]);
-// 		var $box = $(this);
-// 		interval[i] = setInterval(function(){
-// 			var rnd = Math.random() * 20;
-// 			var hsl = 'hsl(' + 90 + ',' + (Math.floor(Math.random() * 50)) +"%" + ',' + (Math.floor(Math.random() * 80)) +"%" + ')';
-// 			$box.css("height", rnd + "%");
-// 			$box.css("background-color", hsl);
-// 			console.log($box);
-// 		}, 300);
-// 	});
-// }
-// onInterval();
+var interval = [];
+function onInterval () {
+	$(".move-box").each(function(i) {
+		clearInterval(interval[i]);
+		var $box = $(this);
+		interval[i] = setInterval(function(){
+			var rnd = Math.random() * 20;
+			var hsl = 'hsl(' + 90 + ',' + (Math.floor(Math.random() * 50)) +"%" + ',' + (Math.floor(Math.random() * 80)) +"%" + ')';
+			$box.css("height", rnd + "%");
+			$box.css("background-color", hsl);
+			console.log($box);
+		}, 300);
+	});
+}
+onInterval();
 
-// /* hover시 네비바 내려오게 하기 */
-// $('.navi').mouseover(function(e) {
-// 	e.stopPropagation();
-//  	var n = $(this).index();
-// 	$(".move-box").css("height", 0);
-// 	$(this).find(".move-box").css("height","100vh");
-// 	onInterval();
-//   clearInterval(interval[n]);
-// });
+/* hover시 네비바 내려오게 하기 */
+$('.navi').mouseover(function(e) {
+	e.stopPropagation();
+ 	var n = $(this).index();
+	$(".move-box").css("height", 0);
+	$(this).find(".move-box").css("height","100vh");
+	onInterval();
+  clearInterval(interval[n]);
+});
 
-// $('.navi-wrap').mouseleave(onInterval);
+$('.navi-wrap').mouseleave(onInterval);
 
 
 
@@ -140,5 +140,25 @@ rightAni();
 
 $(".bt1").click(function(){
   var position = $("#about-wrap").offset();
-  $("body").stop().animate( {scrollTop: position.top},500);
+  $("html,body").stop().animate( {'scrollTop': position.top},500);
 });
+$(".bt2").click(function(){
+  var position = $("#portflio-wrap").offset();
+  $("html,body").stop().animate( {'scrollTop': position.top},500);
+});
+$(".bt3").click(function(){
+  var position = $("#contect-wrap").offset();
+  $("html,body").stop().animate( {'scrollTop': position.top},500);
+});
+
+
+/* 스크롤 내려가면 확인 이벤트 */
+function onScroll() {
+	var scTop = $(this).scrollTop();
+	var bottom = scTop + $(this).innerHeight() - 200;
+
+	$(".ani").each(function(){
+		
+	});
+}
+
