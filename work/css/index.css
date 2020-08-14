@@ -96,7 +96,8 @@ animation-delay: 7s; animation-fill-mode:forwards;}
 #active-wrap .left-slide {position: relative; display: flex; left: 0;}
 #active-wrap .left-slide > li {flex-shrink: 0;}
 
-#active-wrap .right-slide {position: relative; display: flex; left: 0;}
+#active-wrap > .right-active{	position: relative; right:1200px;}
+#active-wrap .right-slide {position: relative; display: flex; top:0;}
 #active-wrap .right-slide > li {flex-shrink: 0;}
 
 /* portflio-wrap */
