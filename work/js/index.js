@@ -24,7 +24,7 @@ function onInterval () {
 			var hsl = 'hsl(' + 90 + ',' + (Math.floor(Math.random() * 50)) +"%" + ',' + (Math.floor(Math.random() * 80)) +"%" + ')';
 			$box.css("height", rnd + "%");
 			$box.css("background-color", hsl);
-			console.log($box);
+			// console.log($box);
 		}, 300);
 	});
 }
@@ -153,12 +153,13 @@ $(".bt3").click(function(){
 
 
 /* 스크롤 내려가면 확인 이벤트 */
+$(window).scroll(onScroll);
 function onScroll() {
 	var scTop = $(this).scrollTop();
 	var bottom = scTop + $(this).innerHeight() - 200;
 
-	$(".ani").each(function(){
-		
-	});
+	var offtop = $(".skill-bars").offset().top;
+	var hei = $(window).innerHeight();
+	console.log((scTop+hei), offtop);
 }
 
