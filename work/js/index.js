@@ -160,12 +160,12 @@ $(window).scroll(onScroll);
 
 function onScroll() {
 	var scTop = $(this).scrollTop();
-	var offtop = $(".skill-bars").offset().top;
+	var offtop = $(".skill-name > .active-bar").offset().top;
 	var hei = $(window).innerHeight();
 	var sum = scTop + hei;
 	console.log(scTop + hei > offtop)
 	if ((scTop + hei) > offtop) {
-		$('.active-bar').each(function () {
+		$('.skill-name > .active-bar').each(function () {
 			var tar = $(this).data("value");
 			$(this).stop().animate({ value: tar }, { duration: 5000 });
 		});

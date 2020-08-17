@@ -76,17 +76,17 @@ animation-delay: 7s; animation-fill-mode:forwards;}
 #about-wrap > .last-layout > .lc-wrap > li:not(:first-child){padding: 0 1rem; line-height: 4rem; }
 
 #about-wrap > .last-layout > .skill-wrap{color: #f8f8f8; font-size: 1.5rem; margin-left: 54px; padding-top: 64px; position: relative; }
-#about-wrap > .last-layout > .skill-wrap > .skill-desc{display:flex;}
 #about-wrap > .last-layout > .skill-wrap > .skill-desc > .skill-name{padding: 0 1rem; line-height: 3rem;  flex:10% 0 0;}
 
-#about-wrap > .last-layout > .skill-wrap > .skill-desc> .skill-bars {flex:90% 0 0; position:relative;}
-#about-wrap > .last-layout > .skill-wrap > .skill-desc> .skill-bars > .active-bar{position: absolute; height: 10px; border-radius: 4px; }
-#about-wrap > .last-layout > .skill-wrap > .skill-desc> .skill-bars > .active-bar:nth-child(1){top:18px; background-color: #e54d26;}
-#about-wrap > .last-layout > .skill-wrap > .skill-desc> .skill-bars > .active-bar:nth-child(2){top:68px; background-color: #0096dc;}
-#about-wrap > .last-layout > .skill-wrap > .skill-desc> .skill-bars > .active-bar:nth-child(3){top:116px; background-color: #f0da50;}
-#about-wrap > .last-layout > .skill-wrap > .skill-desc> .skill-bars > .active-bar:nth-child(4){top:168px; background-color: #0768ad;} 
-#about-wrap > .last-layout > .skill-wrap > .skill-desc> .skill-bars > .active-bar:nth-child(5){top:214px; background-color: #539e43;}
-#about-wrap > .last-layout > .skill-wrap > .skill-desc> .skill-bars > .active-bar:nth-child(6){top:260px; background-color: #36c6fa;}
+#about-wrap > .last-layout > .skill-wrap > .skill-desc{display: flex;}
+#about-wrap > .last-layout > .skill-wrap > .skill-desc  .skill-name{flex:30% 0 0;}
+#about-wrap > .last-layout > .skill-wrap > .skill-desc  .active-bar{flex:70% 0 0; height: 10px; border-radius: 4px; }
+#about-wrap > .last-layout > .skill-wrap > .skill-desc 	.skill-name:nth-child(1) .active-bar{background-color: #e54d26;}
+#about-wrap > .last-layout > .skill-wrap > .skill-desc  .skill-name:nth-child(2) .active-bar{background-color: #0096dc;}
+#about-wrap > .last-layout > .skill-wrap > .skill-desc  .skill-name:nth-child(3) .active-bar{background-color: #f0da50;}
+#about-wrap > .last-layout > .skill-wrap > .skill-desc  .skill-name:nth-child(4) .active-bar{background-color: #0768ad;} 
+#about-wrap > .last-layout > .skill-wrap > .skill-desc  .skill-name:nth-child(5) .active-bar{background-color: #539e43;}
+#about-wrap > .last-layout > .skill-wrap > .skill-desc  .skill-name:nth-child(6) .active-bar{background-color: #36c6fa;}
 
 
 
