@@ -80,13 +80,13 @@ animation-delay: 7s; animation-fill-mode:forwards;}
 #about-wrap > .last-layout > .skill-wrap > .skill-desc > .skill-name{padding: 0 1rem; line-height: 3rem;  flex:10% 0 0;}
 
 #about-wrap > .last-layout > .skill-wrap > .skill-desc> .skill-bars{flex:90% 0 0; position:relative;}
-#about-wrap > .last-layout > .skill-wrap > .skill-desc> .skill-bars > .active-bar{position: absolute; height: 10px; border-radius: 4px;}
-#about-wrap > .last-layout > .skill-wrap > .skill-desc> .skill-bars > .active-bar:nth-child(1){width:16rem; top:18px; background-color: #e54d26;}
-#about-wrap > .last-layout > .skill-wrap > .skill-desc> .skill-bars > .active-bar:nth-child(2){width:14rem; top:68px; background-color: #0096dc;}
-#about-wrap > .last-layout > .skill-wrap > .skill-desc> .skill-bars > .active-bar:nth-child(3){width:14rem;	top:116px; background-color: #f0da50;}
-#about-wrap > .last-layout > .skill-wrap > .skill-desc> .skill-bars > .active-bar:nth-child(4){width:15rem; top: 168px; background-color: #0768ad;} 
-#about-wrap > .last-layout > .skill-wrap > .skill-desc> .skill-bars > .active-bar:nth-child(5){width:9rem; top: 214px; background-color: #539e43;}
-#about-wrap > .last-layout > .skill-wrap > .skill-desc> .skill-bars > .active-bar:nth-child(6){width:10rem; top:260px; background-color: #36c6fa;}
+#about-wrap > .last-layout > .skill-wrap > .skill-desc> .skill-bars > .active-bar{position: absolute; height: 10px; border-radius: 4px; }
+#about-wrap > .last-layout > .skill-wrap > .skill-desc> .skill-bars > .active-bar:nth-child(1){top:18px; background-color: #e54d26;}
+#about-wrap > .last-layout > .skill-wrap > .skill-desc> .skill-bars > .active-bar:nth-child(2){top:68px; background-color: #0096dc;}
+#about-wrap > .last-layout > .skill-wrap > .skill-desc> .skill-bars > .active-bar:nth-child(3){top:116px; background-color: #f0da50;}
+#about-wrap > .last-layout > .skill-wrap > .skill-desc> .skill-bars > .active-bar:nth-child(4){top:168px; background-color: #0768ad;} 
+#about-wrap > .last-layout > .skill-wrap > .skill-desc> .skill-bars > .active-bar:nth-child(5){top:214px; background-color: #539e43;}
+#about-wrap > .last-layout > .skill-wrap > .skill-desc> .skill-bars > .active-bar:nth-child(6){top:260px; background-color: #36c6fa;}
 
 
 
@@ -110,9 +110,6 @@ animation-delay: 7s; animation-fill-mode:forwards;}
 
 
 
-
-
-
 	/* animation */
 	#main-wrap > .header > .navi-wrap > .navi:hover > .active-box{transition: all 0.5s; height: 1rem; opacity: 0;}
 	
@@ -120,16 +117,6 @@ animation-delay: 7s; animation-fill-mode:forwards;}
 		0% {opacity:0; width:0;}
 		100% {opacity:1; width:250px;}
 	}
-	
-	#about-wrap > .last-layout > .skill-wrap > .skill-desc> .skill-bars > .ani{transition:all 1s; animation-name:active-bar;}
-	
-	@keyframes active-bar{
-		0%{opacity:0; width:0;}
-		100%{opacity:1; width:100%;}
-	}
-
-
-	
 
 
 /* 반응형 */

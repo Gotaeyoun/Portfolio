@@ -156,10 +156,14 @@ $(".bt3").click(function(){
 $(window).scroll(onScroll);
 function onScroll() {
 	var scTop = $(this).scrollTop();
-	var bottom = scTop + $(this).innerHeight() - 200;
-
-	var offtop = $(".skill-bars").offset().top;
+  var offtop = $(".skill-bars").offset().top;
 	var hei = $(window).innerHeight();
-	console.log((scTop+hei), offtop);
+  var sum = scTop + hei;
+  console.log(scTop+hei > offtop)
+  if((scTop+hei) > offtop){
+    $('progress').each(function() {
+      var max = $(this).val();
+      $(this).val(0).animate({ value: max }, { duration: 5000});
+        });
+  }
 }
-
