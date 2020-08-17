@@ -45,18 +45,18 @@ html,body{font-family: 'Open Sans', sans-serif;}
 
 .actbar-wrap {position: absolute; width:100%; height: 100%;}
 .actbar-wrap > div{position: absolute; height:10px;}
-.actbar-wrap > .actbar1 {background-color: #f87f5a; top:170px; left: 646px; animation-name: moving-line; animation-duration: 1s;
+.actbar-wrap > .actbar1 {background-color: #f87f5a; top:10.625rem; left: 40.375rem; animation-name: moving-line; animation-duration: 1s;
 animation-delay: 7s; animation-fill-mode:forwards;}
-.actbar-wrap > .actbar2 {background-color: #aeff53; top:170px; left: 300px; animation-name: moving-line; animation-duration: 1s;
+.actbar-wrap > .actbar2 {background-color: #aeff53; top:10.625rem; left: 18.75rem; animation-name: moving-line; animation-duration: 1s;
 	animation-delay: 7.6s; animation-fill-mode:forwards;}
-.actbar-wrap > .actbar3 {background-color: #5af8f0; top:170px; left: 660px; animation-name: moving-line; animation-duration: 1s;
+.actbar-wrap > .actbar3 {background-color: #5af8f0; top:10.625rem; left: 41.25rem; animation-name: moving-line; animation-duration: 1s;
 	animation-delay: 7.3s; animation-fill-mode:forwards;} 
 
 
 	/* about-wrap */
 #about-wrap{margin:5rem 0; width:92%; height:100vh; display:flex; font-family: 'Noto Sans KR', sans-serif; margin-left: auto; z-index: 999}
 #about-wrap  .title{font-family: 'Nanum Myeongjo', serif; font-size: 2.125rem; color:#aeff53; font-weight: 700;}
-#about-wrap > .first-layout	{flex: 27% 0 0; display: flex; justify-content: center; padding-top: 100px;}
+#about-wrap > .first-layout	{flex: 27% 0 0; display: flex; justify-content: center; padding-top: 6.25rem;}
 #about-wrap > .first-layout > .img-size{width:300px; height:300px; }
 
 
@@ -75,7 +75,7 @@ animation-delay: 7s; animation-fill-mode:forwards;}
 #about-wrap > .last-layout > .lc-wrap{color: #f8f8f8; font-size: 1.5rem; margin-left: 54px; padding-top: 48px;}
 #about-wrap > .last-layout > .lc-wrap > li:not(:first-child){padding: 0 1rem; line-height: 4rem; }
 
-#about-wrap > .last-layout > .skill-wrap{color: #f8f8f8; font-size: 1.5rem; margin-left: 54px; padding-top: 64px; position: relative; }
+#about-wrap > .last-layout > .skill-wrap{color: #f8f8f8; font-size: 1.5rem; margin-left: 3.375rem; padding-top: 4rem; position: relative; }
 #about-wrap > .last-layout > .skill-wrap > .skill-desc > .skill-name{padding: 0 1rem; line-height: 3rem;  flex:10% 0 0;}
 
 #about-wrap > .last-layout > .skill-wrap > .skill-desc{}
@@ -98,7 +98,7 @@ animation-delay: 7s; animation-fill-mode:forwards;}
 #active-wrap .left-slide {position: relative; display: flex; left: 0;}
 #active-wrap .left-slide > li {flex-shrink: 0;}
 
-#active-wrap > .right-active{	position: relative; right:1200px;}
+#active-wrap > .right-active{	position: relative; right:75rem;}
 #active-wrap .right-slide {position: relative; display: flex; top:0;}
 #active-wrap .right-slide > li {flex-shrink: 0;}
 
@@ -109,9 +109,10 @@ animation-delay: 7s; animation-fill-mode:forwards;}
 
 /* contect-wrap */
 #contect-wrap{width:100%; height: 100vh; margin-top: 5rem; position: relative; }
-#contect-wrap > h1{ font-family: 'Nanum Myeongjo', serif;  font-size:3.75rem; position: absolute; top:200px; left:280px; color: #f8f8f8; font-size: bold;}
-#contect-wrap > .container{position: absolute; left: 196px; top:316px;}
-#contect-wrap > .line{width:316px; height:6px; background-color: #aeff53; top:254px; left:600px;position: absolute;}
+#contect-wrap > h1{ font-family: 'Nanum Myeongjo', serif;  font-size:3.75rem; position: absolute; top:12.5rem; left:17.5rem; color: #f8f8f8; font-size: bold;}
+#contect-wrap > .container{position: absolute; left: 12.25rem; top:19.75rem;}
+#contect-wrap > .line{width:19.75rem; height:6px; background-color: #aeff53; top:15.875rem; left:37.5rem;position: absolute;}
+
 
 
 
