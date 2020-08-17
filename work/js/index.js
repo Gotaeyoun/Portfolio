@@ -24,7 +24,6 @@ function onInterval() {
 			var hsl = 'hsl(' + 90 + ',' + (Math.floor(Math.random() * 50)) + "%" + ',' + (Math.floor(Math.random() * 80)) + "%" + ')';
 			$box.css("height", rnd + "%");
 			$box.css("background-color", hsl);
-			// console.log($box);
 		}, 300);
 	});
 }
@@ -163,11 +162,10 @@ function onScroll() {
 	var offtop = $(".skill-name > .active-bar").offset().top;
 	var hei = $(window).innerHeight();
 	var sum = scTop + hei;
-	console.log(scTop + hei > offtop)
 	if ((scTop + hei) > offtop) {
 		$('.skill-name > .active-bar').each(function () {
 			var tar = $(this).data("value");
-			$(this).stop().animate({ width: tar+"%" }, { duration: 5000 });
+			$(this).stop().animate({ width: tar+"%" }, { duration: 3000 });
 		});
 	}
 }
