@@ -167,7 +167,7 @@ function onScroll() {
 	if ((scTop + hei) > offtop) {
 		$('.skill-name > .active-bar').each(function () {
 			var tar = $(this).data("value");
-			$(this).stop().animate({ value: tar }, { duration: 5000 });
+			$(this).stop().animate({ width: tar+"%" }, { duration: 5000 });
 		});
 	}
 }

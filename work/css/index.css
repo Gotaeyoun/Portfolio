@@ -78,9 +78,11 @@ animation-delay: 7s; animation-fill-mode:forwards;}
 #about-wrap > .last-layout > .skill-wrap{color: #f8f8f8; font-size: 1.5rem; margin-left: 54px; padding-top: 64px; position: relative; }
 #about-wrap > .last-layout > .skill-wrap > .skill-desc > .skill-name{padding: 0 1rem; line-height: 3rem;  flex:10% 0 0;}
 
-#about-wrap > .last-layout > .skill-wrap > .skill-desc{display: flex;}
-#about-wrap > .last-layout > .skill-wrap > .skill-desc  .skill-name{flex:30% 0 0;}
-#about-wrap > .last-layout > .skill-wrap > .skill-desc  .active-bar{flex:70% 0 0; height: 10px; border-radius: 4px; }
+#about-wrap > .last-layout > .skill-wrap > .skill-desc{}
+#about-wrap > .last-layout > .skill-wrap > .skill-desc  .skill-name{display: flex; align-items: center;}
+#about-wrap > .last-layout > .skill-wrap > .skill-desc  .skill-name > div:nth-child(1){flex: 30% 0 0;}
+#about-wrap > .last-layout > .skill-wrap > .skill-desc  .skill-name > div:nth-child(2){width: 0;}
+#about-wrap > .last-layout > .skill-wrap > .skill-desc  .active-bar{ height: 10px; border-radius: 4px; }
 #about-wrap > .last-layout > .skill-wrap > .skill-desc 	.skill-name:nth-child(1) .active-bar{background-color: #e54d26;}
 #about-wrap > .last-layout > .skill-wrap > .skill-desc  .skill-name:nth-child(2) .active-bar{background-color: #0096dc;}
 #about-wrap > .last-layout > .skill-wrap > .skill-desc  .skill-name:nth-child(3) .active-bar{background-color: #f0da50;}
