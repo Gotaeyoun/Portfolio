@@ -169,3 +169,13 @@ function onScroll() {
 		});
 	}
 }
+
+
+/* 마우스 올리면 움직이기 이벤트 */
+$('.desc-title').hover(function(){
+  $('.desc-title').addClass('hvr-bounce-in')
+  },
+  function(){
+    $('.desc-title').removeClass('hvr-bounce-in');
+  }
+);
