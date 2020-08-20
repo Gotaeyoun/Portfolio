@@ -172,10 +172,17 @@ function onScroll() {
 
 
 /* 마우스 올리면 움직이기 이벤트 */
-$('.desc-title').hover(function(){
-  $('.desc-title').addClass('hvr-bounce-in')
-  },
-  function(){
-    $('.desc-title').removeClass('hvr-bounce-in');
-  }
-);
+function onMouseHover(){
+	var idx = $(".pf-list > li")
+	console.log(idx);
+	$('.desc-title').hover(function(){
+		var indexNo = $(this).index();
+		$('.pf-desc > a').eq(indexNo).toggleClass('hide');
+		$('.desc-title').addClass('hvr-bounce-in')
+	},
+	
+	function(){
+		$('.desc-title').removeClass('hvr-bounce-in');}
+	);
+}
+onMouseHover()

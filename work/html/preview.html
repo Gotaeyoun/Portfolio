@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="../js/jquery-3.5.1.min.js"></script>
+</head>
+	<style>
+.left-div > span,
+.right-div > span {
+    display: inline-block;
+    padding: 4px 10px;
+    background: #ffc3c3;
+    margin: 0 0 10px;
+}
+.right-div > span {
+    background: #e0e0e0;
+}
+	</style>
+<body>
+<div class="left-div">
+   <span>on / off</span>
+   <span>on / off</span>
+   <span>on / off</span>
+</div>
+
+<div class="right-div">
+   <span>Test text 1</span>
+   <span>Test text 2</span>
+   <span>Test text 3</span>
+</div>
+<script>
+	
+	var clickEle = $('.left-div span');
+	clickEle.click(function () {
+  var indexNo = $(this).index();
+  $('.right-div span').eq(indexNo).toggleClass('hide');
+})
+</script>
+</body>
+
+</html>

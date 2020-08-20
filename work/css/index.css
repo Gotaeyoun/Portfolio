@@ -104,7 +104,8 @@ animation-delay: 7s; animation-fill-mode:forwards;}
 
 /* portflio-wrap */
 #portflio-wrap{width:100%;margin:5rem 0; display: flex;}
-#portflio-wrap > .pf-picture-layout{flex:68.25% 0 0; border:1px solid red; display:flex; }
+#portflio-wrap > .pf-desc-layout > .pf-desc-wrap > .pf-desc > .desc-title {text-decoration:none}
+#portflio-wrap > .pf-picture-layout{flex:68.25% 0 0; display:flex; }
 #portflio-wrap > .pf-picture-layout > .pf-list{display:flex; justify-content: center; align-items: center;}
 #portflio-wrap > .pf-picture-layout  .img-size{width:50%;}
 
