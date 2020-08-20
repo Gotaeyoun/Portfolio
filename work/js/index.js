@@ -178,7 +178,7 @@ function onMouseHover(){
 	$('.pf-desc').hover(function(){
 		var indexNo = $(this).index();
 		console.log(indexNo)
-		$(this).eq(idx).toggleClass('hide');
+		$(this).eq(idx).
 		$('.desc-title').addClass('hvr-bounce-in')
 	},
 	function(){
@@ -186,3 +186,10 @@ function onMouseHover(){
 	);
 }
 onMouseHover()
+
+
+/* 마우스 움직이면 그림이 따라 움직이는 이벤트 */
+
+function onMouseAction(){
+
+}
