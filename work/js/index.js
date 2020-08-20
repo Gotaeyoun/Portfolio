@@ -154,7 +154,7 @@ $(".bt3").click(function () {
 });
 
 
-/* 스크롤 내려가면 확인 이벤트 */
+/* 스크롤 이벤트 */
 $(window).scroll(onScroll);
 
 function onScroll() {
@@ -162,14 +162,21 @@ function onScroll() {
 	var offtop = $(".skill-name > .active-bar").offset().top;
 	var hei = $(window).innerHeight();
 	var sum = scTop + hei;
+	
 	if ((scTop + hei) > offtop) {
 		$('.skill-name > .active-bar').each(function () {
 			var tar = $(this).data("value");
 			$(this).stop().animate({ width: tar+"%" }, { duration: 3000 });
 		});
 	}
+	if(scTop > 800) $(".bt-top").css("visibility","visible");
+	else $(".bt-top").css("visibility","hidden");
 }
 
+function onTopClick(){
+	$("html,body").stop().animate({"scrollTop":0},800, onScroll);
+}
+$(".bt-top").click(onTopClick);
 
 /* 마우스 올리면 움직이기 이벤트 */
 function onMouseHover(){
@@ -178,7 +185,6 @@ function onMouseHover(){
 	$('.pf-desc').hover(function(){
 		var indexNo = $(this).index();
 		console.log(indexNo)
-		$(this).eq(idx).
 		$('.desc-title').addClass('hvr-bounce-in')
 	},
 	function(){
