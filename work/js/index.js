@@ -182,14 +182,17 @@ $(".bt-top").click(onTopClick);
 function onMouseHover(){
 	var idx = $(".pf-list > li");
 	console.log(idx);
-	$('.pf-desc').hover(function(){
+	$('.pf-desc').mouseenter(function(){
 		var indexNo = $(this).index();
-		console.log(indexNo)
-		$('.desc-title').addClass('hvr-bounce-in')
-	},
-	function(){
-		$('.desc-title').removeClass('hvr-bounce-in');}
-	);
+		console.log(indexNo);
+		$('.desc-title').addClass('hvr-bounce-in');
+		$(".pf-list .img-size").css("display", "none");
+		$(".pf-list .img-size").eq(indexNo).css("display", "block");
+	});
+	$('.pf-desc').mouseleave(function(){
+		$(".pf-list .img-size").css("display", "none");
+	});
+	$('.pf-desc').eq(0).trigger("mouseenter");
 }
 onMouseHover()
 
