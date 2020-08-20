@@ -178,13 +178,14 @@ function onTopClick(){
 }
 $(".bt-top").click(onTopClick);
 
+
+
+
 /* 마우스 올리면 움직이기 이벤트 */
 function onMouseHover(){
 	var idx = $(".pf-list > li");
-	console.log(idx);
 	$('.pf-desc').mouseenter(function(){
 		var indexNo = $(this).index();
-		console.log(indexNo);
 		$('.desc-title').addClass('hvr-bounce-in');
 		$(".pf-list .img-size").css("display", "none");
 		$(".pf-list .img-size").eq(indexNo).css("display", "block");
@@ -200,5 +201,9 @@ onMouseHover()
 /* 마우스 움직이면 그림이 따라 움직이는 이벤트 */
 
 function onMouseAction(){
-
+	$(".pf-desc").mousemove(function(e){
+		var offsetx = 
+		// var offsetx = $(this)
+	});
 }
+onMouseAction();
