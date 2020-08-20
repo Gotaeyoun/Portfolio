@@ -173,14 +173,14 @@ function onScroll() {
 
 /* 마우스 올리면 움직이기 이벤트 */
 function onMouseHover(){
-	var idx = $(".pf-list > li")
+	var idx = $(".pf-list > li");
 	console.log(idx);
-	$('.desc-title').hover(function(){
+	$('.pf-desc').hover(function(){
 		var indexNo = $(this).index();
-		$('.pf-desc > a').eq(indexNo).toggleClass('hide');
+		console.log(indexNo)
+		$(this).eq(idx).toggleClass('hide');
 		$('.desc-title').addClass('hvr-bounce-in')
 	},
-	
 	function(){
 		$('.desc-title').removeClass('hvr-bounce-in');}
 	);
