@@ -201,12 +201,26 @@ onMouseHover()
 /* 마우스 움직이면 그림이 따라 움직이는 이벤트 */
 
 function onMouseAction(){
-	$(".pf-desc").mousemove(function(e){
+	$(".pf-desc > .desc-title").mousemove(function(e){
 		var offsetx = e.offsetX
 		var offsety = e.offsetY
+		console.log(offsetx)
 		$(".pf-picture-layout> .pf-list > .img-size").css({
-			"top":  offsetx+"px"
+			"top":  offsety+"px",
+			"left" : offsetx+"px"
 		})
 	});
 }
 onMouseAction()
+
+
+/* email.js */
+emailjs.init('user_TROFqVnbPGZyygPAci7nt');
+
+function onContact(event) {
+	event.preventDefault();
+	emailjs.sendForm('gmail', 'Portfilio', this);
+	alert("연락해주셔서 감사합니다");
+	this.reset();
+}
+$('#contactForm').submit(onContact);

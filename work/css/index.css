@@ -113,6 +113,9 @@ animation-delay: 7s; animation-fill-mode:forwards;}
 #portflio-wrap > .pf-desc-layout{flex: 31.75% 0 0; z-index: 10000;}
 #portflio-wrap > .pf-desc-layout >.pf-desc-wrap > .pf-desc{display: flex; flex-direction: column; margin-bottom: 1rem;}
 #portflio-wrap > .pf-desc-layout >.pf-desc-wrap > .pf-desc >.desc-title{font-size:4rem; color: #f8f8f8; cursor: pointer; text-align: center; }
+#portflio-wrap > .pf-desc-layout >.pf-desc-wrap > .pf-desc >.desc-title.front-end{color:red}
+#portflio-wrap > .pf-desc-layout >.pf-desc-wrap > .pf-desc >.desc-title.back-end{color:blue}
+#portflio-wrap > .pf-desc-layout >.pf-desc-wrap > .pf-desc >.desc-title.public{color:green}
 #portflio-wrap > .pf-desc-layout >.pf-desc-wrap > .pf-desc >.desc-title:hover ~.desc-text{display: block;}
 #portflio-wrap > .pf-desc-layout >.pf-desc-wrap > .pf-desc >.desc-text{font-size: 1.25rem; display:none;   color: #f8f8f8; text-align: center;}
 
@@ -161,3 +164,4 @@ animation-delay: 7s; animation-fill-mode:forwards;}
 	
 
 /* 반응형 */
+
