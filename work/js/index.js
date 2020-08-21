@@ -98,7 +98,7 @@ function typingLine() {
 }
 
 
-/*  스크롤되면 네비바가 옆으로 붙어요 */
+/*  스크롤되면 네비바가 옆으로 붙어요 */ 
 
 var $header = $('header');
 $(window).scroll(function () {
@@ -204,7 +204,6 @@ function onMouseAction(){
 	$(".pf-desc > .desc-title").mousemove(function(e){
 		var offsetx = e.offsetX
 		var offsety = e.offsetY
-		console.log(offsetx)
 		$(".pf-picture-layout> .pf-list > .img-size").css({
 			"top":  offsety+"px",
 			"left" : offsetx+"px"
@@ -212,6 +211,18 @@ function onMouseAction(){
 	});
 }
 onMouseAction()
+
+/* 그림 줄 맞춤 */
+function onPictureMove(){
+	$('.desc-title').mousemove(function(e){
+		var offsetY = e.clientY
+
+		$(".pf-list > .img-size").css({
+			"top": offsetY + "px"
+		})
+	})
+}
+onPictureMove();
 
 
 /* email.js */
