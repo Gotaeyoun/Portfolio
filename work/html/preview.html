@@ -1,50 +1,57 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <title>mousemove demo</title>
-  <style>
-  div {
-    width: 220px;
-    height: 170px;
-    margin: 10px 50px 10px 10px;
-    background: yellow;
-    border: 2px groove;
-    float: right;
-  }
-  p {
-    margin: 0;
-    margin-left: 10px;
-    color: red;
-    width: 220px;
-    height: 120px;
-    padding-top: 70px;
-    float: left;
-    font-size: 14px;
-  }
-  span {
-    display: block;
-  }
-  </style>
-  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<style>
+*{padding:0px;margin:0px;}
+#main{position:relative;width:700px;border:1px solid #d2d2d2;margin:0px auto;height:500px;}
+#main #ele1{position:absolute;left:100px;top:200px;}
+#main #ele2{position:absolute;left:80px;top:100px;}
+#main #ele3{position:absolute;right:300px;top:150px;}
+#main #ele4{position:absolute;right:100px;top:200px;}
+
+</style>
+<script src="http://code.jquery.com/jquery-1.6.2.js"></script>
+<script>
+$(function(){
+  var bodyX = ((parseInt($("body").css("width"))-parseInt($("#main").css("width")))/2);
+  var Default;
+  var Now;
+  var Minus;
+  var Left;
+  $("#main").mousemove(function(e){
+     
+    if(Default){
+      Now = parseInt(e.pageX-bodyX);
+      Minus = parseInt(Math.round(Default - Now));
+      //alert((parseInt($("#ele2").css("left"))+parseInt(Minus)));
+      $("#ele2").css("left",((parseInt($("#ele2").css("left"))+Minus))+"px");
+      //alert($("#ele2").css("left"));
+      //alert($("#ele3").css("right"));
+      //alert($("#ele4").css("right"));
+      $("#mouse").html("Now : " + Now + " Default : " + parseInt(e.pageX-bodyX) + " Minus : " + Minus + " " +((parseInt($("#ele2").css("left"))+Minus)));
+      }
+      Default = parseInt(e.pageX-bodyX);
+
+    //$("#mouse").html((e.pageX-bodyX));
+    //alert(e.clientX);
+    //alert($("#ele1").css("left"));
+    //alert($("#ele2").css("left"));
+    //alert($("#ele3").css("right"));
+    //alert($("#ele4").css("right"));
+    });
+  });
+</script>
 </head>
 <body>
- 
-<p>
-  <span>Move the mouse over the div.</span>
-  <span>&nbsp;</span>
-</p>
-<div></div>
- 
-<script>
-$( "div" ).mousemove(function( event ) {
-  console.log(event)
-  var pageCoords = "( " + event.pageX + ", " + event.pageY + " )";
-  var clientCoords = "( " + event.clientX + ", " + event.clientY + " )";
-  $( "span" ).first().text( "( event.pageX, event.pageY ) : " + pageCoords );
-  $( "span" ).last().text( "( event.clientX, event.clientY ) : " + clientCoords );
-});
-</script>
- 
+<div id="main">
+  <div id="ele1">Default : Left1</div>
+  <div id="ele2">Default : Left2</div>
+  <div id="ele3">Default : Right1</div>
+  <div id="ele4">Default : Right2</div>
+  <div id="mouse"></div>
+</div>
 </body>
 </html>
+
+
+

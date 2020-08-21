@@ -202,8 +202,11 @@ onMouseHover()
 
 function onMouseAction(){
 	$(".pf-desc").mousemove(function(e){
-		var offsetx = 
-		// var offsetx = $(this)
+		var offsetx = e.offsetX
+		var offsety = e.offsetY
+		$(".pf-picture-layout> .pf-list > .img-size").css({
+			"top":  offsetx+"px"
+		})
 	});
 }
-onMouseAction();
+onMouseAction()
