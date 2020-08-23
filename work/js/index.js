@@ -218,10 +218,11 @@ function onPictureMove(){
 		var offsetY = e.clientY
 
 		$(".pf-list > .img-size").css({
-			"top": offsetY + "px"
+			"top": (offsetY -	50 )+ "px"
 		})
 	})
 }
+
 onPictureMove();
 
 
