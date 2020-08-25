@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+*{padding:0px;margin:0px;}
+#main{position:relative;width:700px;border:1px solid #d2d2d2;margin:0px auto;height:500px;}
+#main #ele1{position:absolute;left:100px;top:200px;}
+#main #ele2{position:absolute;left:80px;top:100px;}
+#main #ele3{position:absolute;right:300px;top:150px;}
+#main #ele4{position:absolute;right:100px;top:200px;}
+
+</style>
+<script src="http://code.jquery.com/jquery-1.6.2.js"></script>
+<script>
+$(function(){
+  var bodyX = ((parseInt($("body").css("width"))-parseInt($("#main").css("width")))/2);
+  var Default;
+  var Now;
+  var Minus;
+  var Left;
+  $("#main").mousemove(function(e){
+     
+    if(Default){
+      Now = parseInt(e.pageX-bodyX);
+      Minus = parseInt(Math.round(Default - Now));
+      //alert((parseInt($("#ele2").css("left"))+parseInt(Minus)));
+      $("#ele2").css("left",((parseInt($("#ele2").css("left"))+Minus))+"px");
+      //alert($("#ele2").css("left"));
+      //alert($("#ele3").css("right"));
+      //alert($("#ele4").css("right"));
+      $("#mouse").html("Now : " + Now + " Default : " + parseInt(e.pageX-bodyX) + " Minus : " + Minus + " " +((parseInt($("#ele2").css("left"))+Minus)));
+      }
+      Default = parseInt(e.pageX-bodyX);
+
+    //$("#mouse").html((e.pageX-bodyX));
+    //alert(e.clientX);
+    //alert($("#ele1").css("left"));
+    //alert($("#ele2").css("left"));
+    //alert($("#ele3").css("right"));
+    //alert($("#ele4").css("right"));
+    });
+  });
+</script>
+</head>
+<body>
+<div id="main">
+  <div id="ele1">Default : Left1</div>
+  <div id="ele2">Default : Left2</div>
+  <div id="ele3">Default : Right1</div>
+  <div id="ele4">Default : Right2</div>
+  <div id="mouse"></div>
+</div>
+</body>
+</html>
+
+
+

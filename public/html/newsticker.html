@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body{
+  margin: 0 auto;
+}
+.ticker-container {
+  background: tomato;
+	width: 100%;
+	overflow: hidden;
+  margin: 0 auto;
+}
+.ticker-text {
+	height: 150%;
+  color: #fafafa;
+  white-space:nowrap;
+  display:inline-block;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+  </style>
+  <script src="../js/jquery-3.5.1.min.js"></script>
+<body>
+  <div class = "ticker-container">
+    <div class = "ticker-text">
+      <h3>Hello! Welcome to my website. Hello! Welcome to my website. </h3>
+    </div>
+  </div>
+  <script>
+    var width = $('.ticker-text').width(),
+    containerwidth = $('.ticker-container').width(),
+    left = containerwidth;
+
+	  function tick() {
+        if(--left < -width){
+            left = containerwidth;
+        }
+        $(".ticker-text").css("margin-left", left + "px");
+        setTimeout(tick, 1);
+      }
+      tick();
+  </script>
+</body>
+</html>
