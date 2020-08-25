@@ -216,7 +216,7 @@ onMouseAction()
 function onPictureMove(){
 	$('.desc-title').mousemove(function(e){
 		var offsetY = e.clientY
-		console.log(offsetY - 50)
+
 
 		$(".pf-list > .img-size").css({
 			"top": (offsetY -	50 )+ "px"
