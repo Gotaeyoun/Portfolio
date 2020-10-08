@@ -36,15 +36,15 @@ html,body{font-family: 'Open Sans', sans-serif;}
 #main-wrap > .typing{position:relative; height: 100vh; width: 100%; }
 #main-wrap > .typing > ul{font-weight:700; font-size:8.75rem; position: relative;}
 #main-wrap > .typing > ul > li{display: block;}
-#main-wrap > .typing > ul > li:nth-child(1){position:absolute; top: 13.5vw; right: 6.25vw; color:#ec1a5b;}
-#main-wrap > .typing > ul > li:nth-child(2){position:absolute; top: 23.625vw; right: 6.25vw; color:#ec1a5b; letter-spacing: 0.25rem;}
-#main-wrap > .typing > ul > li:nth-child(3){position:absolute; top: 31.5vw; right: 6.25vw; color:#f8f8f8; }
-#main-wrap > .typing > ul > li:nth-child(4){position:absolute; top: 39.75vw; right: 6.25vw; color:#c1bab2; letter-spacing: 0.25rem;}
+#main-wrap > .typing > ul > li:nth-child(1){position:absolute; top: 13.5rem; right: 6.25rem; color:#ec1a5b;}
+#main-wrap > .typing > ul > li:nth-child(2){position:absolute; top: 23.625rem; right: 6.25rem; color:#ec1a5b; letter-spacing: 0.25rem;}
+#main-wrap > .typing > ul > li:nth-child(3){position:absolute; top: 31.5rem; right: 6.25rem; color:#f8f8f8; }
+#main-wrap > .typing > ul > li:nth-child(4){position:absolute; top: 39.75rem; right: 6.25rem; color:#c1bab2; letter-spacing: 0.25rem;}
 #main-wrap > .bg-img{opacity: 0.3; position: absolute; width:60%; right:4.75rem; top:6rem;}
 
 
 .actbar-wrap {position: absolute; width:100%; height: 100%;}
-.actbar-wrap > div{position: absolute; height:10px; border:1px solid red;}
+.actbar-wrap > div{position: absolute; height:10px; }
 .actbar-wrap > .actbar1 {background-color: #f87f5a; top:10.625rem; left: 40.375rem; animation-name: moving-line; animation-duration: 1s;
 animation-delay: 7s; animation-fill-mode:forwards;}
 .actbar-wrap > .actbar2 {background-color: #aeff53; top:10.625rem; left: 18.75rem; animation-name: moving-line; animation-duration: 1s;
@@ -164,30 +164,7 @@ animation-delay: 7s; animation-fill-mode:forwards;}
 	}
 	
 
-/* 반응형 */
 
-
-@media screen and (max-width: 1200px) {
-
-	 
-
-
-
-}
-
-@media screen and (max-width: 767px) {
-
-	
-	
-
-}
-
-@media screen and (max-width: 479px) {
-
-}
-
-
-
-vw 바꾸기 
+/* vw 바꾸기 
 gallery로 이름넣기.
-100vh 해제하기 about쪽
+100vh 해제하기 about쪽 */
