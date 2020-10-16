@@ -12,8 +12,8 @@ html,body{font-family: 'Open Sans', sans-serif;}
 .videobcg{width:300px; height:300px;}
 /* line-wrap */
 .line-wrap{position: absolute; top: 0;}
-.line-wrap > .line:nth-child(1){left: 32vw; position: absolute; border-left: 1px solid rgba(222, 216, 210,.4); height: 100vh; display: none;}
-.line-wrap > .line:nth-child(2){left: 70vw; position: absolute;  border-left: 1px solid rgba(222, 216, 210,.4); height: 100vh; display: none;}
+.line-wrap > .line:nth-child(1){left: 34vw; position: absolute; border-left: 1px solid rgba(222, 216, 210,.4); height: 100vh; display: none;}
+.line-wrap > .line:nth-child(2){left: 68.5vw; position: absolute;  border-left: 1px solid rgba(222, 216, 210,.4); height: 100vh; display: none;}
 .line-wrap > .line:nth-child(3){left: 95vw; position: absolute;  border-left: 1px solid rgba(222, 216, 210,.4); height: 100vh; display: none;} 
 
 
@@ -169,6 +169,7 @@ animation-delay: 7s; animation-fill-mode:forwards;}
 	@media screen and (max-width: 1390px) {
 		#main-wrap > .header > .navi-wrap{margin-left: 0%;}
 		#main-wrap > .typing > ul{font-size: 6rem;}
+		#main-wrap > .typing {height: 77vh;}
 		.actbar-wrap > .actbar1 {top:8.5vw; left: 27vw;}
 		.actbar-wrap > .actbar2 {top:8.5vw; left: 15vw;}
 		.actbar-wrap > .actbar3 {top:8.5vw; left: 29vw;}
@@ -177,13 +178,12 @@ animation-delay: 7s; animation-fill-mode:forwards;}
 	
 	@media screen and (max-width: 991px) {
 			#main-wrap > .typing > ul{font-size: 4rem;}
-			#main-wrap > .header > .navi-wrap{}
 			.actbar-wrap > .move-line{display: none;}
-
 	}
 	
 	@media screen and (max-width: 767px) {
 		#main-wrap > .typing > ul{font-size: 3.5rem;}
+		#main-wrap > .header > .navi-wrap{margin-left: -300px; transition: all 0.8s}
 	}
 	
 	@media screen and (max-width: 575px) {
