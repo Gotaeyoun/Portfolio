@@ -326,6 +326,9 @@ html,body{font-family: 'Open Sans', sans-serif;}
 		#portflio-wrap > .pf-picture-layout .img-size{opacity: 0.5;}
 		#active-wrap{margin-top: 40rem;}
 		#contect-wrap > .line{display: none;}
+		.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+			transform: scale(1);
+		}
 	}
 	
 	
