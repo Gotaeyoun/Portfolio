@@ -172,10 +172,12 @@ function onScroll() {
 	if(scTop > 800) $(".bt-top").css("visibility","visible");
 	else $(".bt-top").css("visibility","hidden");
 }
-
 function onTopClick(){
 	$("html,body").stop().animate({"scrollTop":0},800, onScroll);
 }
+
+
+
 $(".bt-top").click(onTopClick);
 
 
@@ -237,3 +239,22 @@ function onContact(event) {
 	this.reset();
 }
 $('#contactForm').submit(onContact);
+
+
+
+const $menuBtn = document.querySelector(".menu-btn");
+let isMenuOpen = false;
+$menuBtn.addEventListener("click", () => {
+  if (!isMenuOpen) {
+		$menuBtn.classList.add("open");
+		$(".navi-wrap").css("visibility","visible");	
+		// $(".actbar-wrap > div").css("display","block")
+  } else {
+		$menuBtn.classList.remove("open");
+		$(".navi-wrap").css("visibility","hidden");	
+		// $(".actbar-wrap > div").css("display","none")
+  }
+
+  isMenuOpen = !isMenuOpen;
+});
+
