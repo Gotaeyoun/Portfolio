@@ -136,9 +136,30 @@ animation-delay: 7s; animation-fill-mode:forwards;}
 
 /* modal */
 
-.bt-top{width: 50px; height: 50px; border: 1px solid rgba(255,255,255,0.3); background-color: rgba(0,0,0,0.5); display: table; font-size: 1.25rem; color: #fff; border-radius: 3px; cursor: pointer; transition: all 1s;  position:fixed; bottom: 40px; right: 20px; z-index: 100000; visibility: hidden;}
-.bt-top:hover{color: #f30; background-color: rgba(255,255,255,0.3);}
-.bt-top > .fa{display:table-cell; text-align: center; vertical-align: middle;}
+.bt-top{width: 50px;
+	height: 50px;
+	border: 2px solid #aeff53;
+	border-radius: 4px;
+	position: fixed;
+	right: 40px;
+	bottom: 20px;
+	color: #aeff53;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 10000;
+	cursor: pointer;}
+.bt-top > span {
+	animation-duration: 0.4s;
+	animation-direction: alternate; 
+	animation-iteration-count: infinite;
+}
+.bt-top:hover > span {animation-name: bt-up-hover;}
+@keyframes bt-up-hover {
+	0% {transform: translateY(0);}
+	100% {transform: translateY(-5px);}
+}
 
 	/* animation */
 
@@ -166,24 +187,40 @@ animation-delay: 7s; animation-fill-mode:forwards;}
 
 	/* 반응형 사이즈*/
 
-	@media screen and (max-width: 1390px) {
+
+	/* 반응형 사이즈*/
+
+	@media screen and (max-width: 1199px) {
 		#main-wrap > .header > .navi-wrap{margin-left: 0%;}
 		#main-wrap > .typing > ul{font-size: 6rem;}
 		#main-wrap > .typing {height: 77vh;}
-		.actbar-wrap > .actbar1 {top:8.5vw; left: 27vw;}
-		.actbar-wrap > .actbar2 {top:8.5vw; left: 15vw;}
-		.actbar-wrap > .actbar3 {top:8.5vw; left: 29vw;}
+		.actbar-wrap > .actbar1 {top:13vh; left: 27vw;}
+		.actbar-wrap > .actbar2 {top:13vh; left: 15vw;}
+		.actbar-wrap > .actbar3 {top:13vh; left: 29vw;}
+		#about-wrap > .first-layout > .img-size{width:15rem ; height:15rem;}
+		#about-wrap > .last-layout > .edu-wrap{margin-left: 0.25rem; font-size: 1.125rem; padding-top: 100px;}
+		#about-wrap > .last-layout >.lc-wrap{margin-left: 0.25rem; font-size: 1.125rem;}
+		#about-wrap > .last-layout >.skill-wrap{margin-left: 0.25rem; font-size: 1.125rem;}
+		#about-wrap > .second-layout > .contact{font-size:1.25rem; margin-left: 1rem;}
+		#about-wrap > .second-layout > .desc{font-size:1.25rem; margin-left: 2rem; padding-top: 100px;} 
+	
+		#portflio-wrap > .pf-desc-layout >.pf-desc-wrap > .pf-desc >.desc-title{font-size:3rem;}
+		#portflio-wrap > .pf-desc-layout >.pf-desc-wrap > .pf-desc >.desc-text{font-size: 1rem; display:none; color: #f8f8f8; text-align: center; }
+		#portflio-wrap > .pf-desc-layout{flex: 30% 0 0; font-size:1rem;}
+		#portflio-wrap{margin-bottom: 0}
+		#contect-wrap{margin-top: 0;}
 		
 	}
 	
 	@media screen and (max-width: 991px) {
 			#main-wrap > .typing > ul{font-size: 4rem;}
 			.actbar-wrap > .move-line{display: none;}
+			#main-wrap > .header > .navi-wrap{margin-left: 0 !important; transition: all 0.8s}
 	}
 	
 	@media screen and (max-width: 767px) {
 		#main-wrap > .typing > ul{font-size: 3.5rem;}
-		#main-wrap > .header > .navi-wrap{margin-left: -300px; transition: all 0.8s}
+		#main-wrap > .header > .navi-wrap{margin-left: -300px !important; transition: all 0.8s}
 	}
 	
 	@media screen and (max-width: 575px) {
