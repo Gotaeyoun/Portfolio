@@ -175,13 +175,13 @@ html,body{font-family: 'Open Sans', sans-serif;}
   background-color: #aeff53;
   box-shadow: 0 2px 5px var(--box-shadow-color);
 	transition: all 0.5s ease-in-out;
-	display: none;
+	display: block;
 }
 .menu-btn__burger::before,
 .menu-btn__burger::after {
   content: "";
 	position: absolute;
-	display: none;
+	display: block;
 }
 .menu-btn__burger::before {
   transform: translateY(-16px);
@@ -283,7 +283,6 @@ html,body{font-family: 'Open Sans', sans-serif;}
 	}
 	
 	@media screen and (max-width: 767px) {
-		
 		#main-wrap > .typing > ul{font-size: 5rem;}
 		#main-wrap > .header > .navi-wrap{transition: all 1.2s}
 		#portflio-wrap{display: block;}
