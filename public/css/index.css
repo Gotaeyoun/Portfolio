@@ -1,9 +1,11 @@
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap');
-@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css); 
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
 /* font-family: 'Noto Sans KR', sans-serif;
 font-family: 'Open Sans', sans-serif;
-.nanummyeongjo * { font-family: 'Nanum Myeongjo', serif; } */
+.nanummyeongjo * { font-family: 'Nanum Myeongjo', serif; } 
+*/
+
 html,body{font-family: 'Open Sans', sans-serif;}
 h2{display: none;}
 
@@ -120,7 +122,7 @@ h2{display: none;}
 #contect-wrap > h1{ font-family: 'Nanum Myeongjo', serif;  font-size:3.75rem; position: absolute; top:12.5rem; left:17.5rem; color: #f8f8f8; font-weight: bold;}
 #contect-wrap > .container{position: absolute; left: 12.25rem; top:19.75rem;}
 #contect-wrap > .line{width:19.75rem; height:6px; background-color: #aeff53; top:15.875rem; left:37.5rem;position: absolute;}
-
+#contect-wrap > .form-group{margin-bottom:2rem;}
 
 /* modal */
 
@@ -151,7 +153,6 @@ h2{display: none;}
 }
 
 .menu-btn {
-  --box-shadow-color: rgba(255, 101, 47, 0.2);
   width: 50px;
   height: 50px;
 	position: fixed;
