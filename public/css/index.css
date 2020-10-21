@@ -237,6 +237,7 @@ html,body{font-family: 'Open Sans', sans-serif;}
 	/* 반응형 사이즈*/
 
 	@media screen and (max-width: 1199px) {
+		#main-wrap > .header > .navi-wrap {visibility: visible;}
 		#main-wrap > .header > .navi-wrap{margin-left: 0%;}
 		#main-wrap > .typing > ul{font-size: 6rem;}
 		#main-wrap > .typing {height: 77vh;}
