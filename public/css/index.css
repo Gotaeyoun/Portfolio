@@ -5,7 +5,7 @@
 font-family: 'Open Sans', sans-serif;
 .nanummyeongjo * { font-family: 'Nanum Myeongjo', serif; } */
 html,body{font-family: 'Open Sans', sans-serif;}
-
+h2{display: none;}
 
 /* common */
 #wrapper{background-color :rgb(39, 37, 38); }
@@ -117,7 +117,7 @@ html,body{font-family: 'Open Sans', sans-serif;}
 
 /* contect-wrap */
 #contect-wrap{width:100%; height: 100vh; margin-top: 5rem; position: relative; }
-#contect-wrap > h1{ font-family: 'Nanum Myeongjo', serif;  font-size:3.75rem; position: absolute; top:12.5rem; left:17.5rem; color: #f8f8f8; font-size: bold;}
+#contect-wrap > h1{ font-family: 'Nanum Myeongjo', serif;  font-size:3.75rem; position: absolute; top:12.5rem; left:17.5rem; color: #f8f8f8; font-weight: bold;}
 #contect-wrap > .container{position: absolute; left: 12.25rem; top:19.75rem;}
 #contect-wrap > .line{width:19.75rem; height:6px; background-color: #aeff53; top:15.875rem; left:37.5rem;position: absolute;}
 
@@ -297,7 +297,7 @@ html,body{font-family: 'Open Sans', sans-serif;}
 		#about-wrap > .first-layout{padding:0; text-align: center; padding: 2rem; padding-top: 5rem;}
 		#active-wrap{margin-top: 34rem; padding-top: 0;}
 		#portflio-wrap{margin-top: 9rem;}
-		#contect-wrap > h1{ font-family: 'Nanum Myeongjo', serif;  font-size:3rem; position: absolute; top:12.5rem; left:14.5rem; color: #f8f8f8; font-size: bold;}
+		#contect-wrap > h1{ font-family: 'Nanum Myeongjo', serif;  font-size:3rem; position: absolute; top:12.5rem; left:14.5rem; color: #f8f8f8; font-weight: bold;}
 		#contect-wrap > .container{position: absolute; left: 12.25rem; top:19.75rem;}
 		.line-wrap > .line:nth-child(1){left: 22vw;}
 		#contect-wrap > .line{width:10rem; height:6px; background-color: #aeff53; top:15rem; left:30rem;}
@@ -320,7 +320,7 @@ html,body{font-family: 'Open Sans', sans-serif;}
 		#about-wrap{width:100%;}
 		#portflio-wrap > .pf-picture-layout .img-size{visibility: hidden;}
 		.line-wrap > .line:nth-child(1){left: 22vw;}
-		#contect-wrap > h1{ font-family: 'Nanum Myeongjo', serif;  font-size:3.5rem; position: absolute; top:12.5rem; left:6rem; color: #f8f8f8; font-size: bold;}
+		#contect-wrap > h1{ font-family: 'Nanum Myeongjo', serif;  font-size:3.5rem; position: absolute; top:12.5rem; left:6rem; color: #f8f8f8; font-weight: bold;}
 		#contect-wrap > .container{position: absolute; left: 0.25rem; top:19.75rem;}
 		.line-wrap > .line:nth-child(1){left: 22vw;}
 		#portflio-wrap > .pf-picture-layout .img-size{opacity: 0.5;}
