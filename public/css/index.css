@@ -122,7 +122,7 @@ h2{display: none;}
 #contect-wrap > h1{ font-family: 'Nanum Myeongjo', serif;  font-size:3.75rem; position: absolute; top:12.5rem; left:17.5rem; color: #f8f8f8; font-weight: bold;}
 #contect-wrap > .container{position: absolute; left: 12.25rem; top:19.75rem;}
 #contect-wrap > .line{width:19.75rem; height:6px; background-color: #aeff53; top:15.875rem; left:37.5rem;position: absolute;}
-#contect-wrap > .form-group{margin-bottom:2rem;}
+#contect-wrap .form-group{margin-bottom:2rem;}
 
 /* modal */
 

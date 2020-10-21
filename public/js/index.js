@@ -247,12 +247,13 @@ let isMenuOpen = false;
 $menuBtn.addEventListener("click", () => {
   if (!isMenuOpen) {
 		$menuBtn.classList.add("open");
-		$(".navi-wrap").css("visibility","hidden");	
-		$("#main-wrap > .header > .navi-wrap > .navi > .move-box").css("display","none");	
-  } else {
-		$menuBtn.classList.remove("open");
 		$(".navi-wrap").css("visibility","visible");	
 		$("#main-wrap > .header > .navi-wrap > .navi > .move-box").css("display","block");	
+	
+  } else {
+		$menuBtn.classList.remove("open");
+		$(".navi-wrap").css("visibility","hidden");	
+		$("#main-wrap > .header > .navi-wrap > .navi > .move-box").css("display","none");	
   }
 
   isMenuOpen = !isMenuOpen;
