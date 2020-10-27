@@ -161,7 +161,7 @@ h2{display: none;}
   display: flex;
   justify-content: center;
   align-items: center;
-	z-index: 9999;
+	z-index: 20000;
   cursor: pointer;
 	transition: all 0.5s ease-in-out;
 	
@@ -230,10 +230,6 @@ h2{display: none;}
 		transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 	}
 	
-	
-
-	/* 반응형 사이즈*/
-
 
 	/* 반응형 사이즈*/
 
@@ -331,9 +327,3 @@ h2{display: none;}
 			transform: scale(1);
 		}
 	}
-	
-	
-
-/* vw 바꾸기 
-gallery로 이름넣기.
-100vh 해제하기 about쪽 */
