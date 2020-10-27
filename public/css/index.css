@@ -324,6 +324,6 @@ h2{display: none;}
 		#active-wrap{margin-top: 40rem;}
 		#contect-wrap > .line{display: none;}
 		.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
-			transform: scale(1);
+			transform: scale(1.2);
 		}
 	}
